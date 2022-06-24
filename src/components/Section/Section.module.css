@@ -1,0 +1,15 @@
+.section {
+    width: auto;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.title {
+    color: rgb(0, 157, 255);
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+    border-bottom: 2px solid rgb(245, 248, 40);
+    font-weight: bold;
+}
