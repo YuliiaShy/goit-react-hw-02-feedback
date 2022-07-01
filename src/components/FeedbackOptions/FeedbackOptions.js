@@ -5,7 +5,7 @@ export default function FeedbackOptions({ options, onLeaveFeedback }) {
   return (
   <div className={s.thumb}>
       <ul className={s.list}>
-        {Object.keys(options).map(option => (
+        {options.map(option => (
           <li key={option} className={s.item}>
                 <button      
               className={s.button}
@@ -23,6 +23,6 @@ export default function FeedbackOptions({ options, onLeaveFeedback }) {
 }
 
 FeedbackOptions.propTypes = {
-  options: PropTypes.shape(PropTypes.string.isRequired),
+  options: PropTypes.arrayOf(PropTypes.string.isRequired),
   onLeaveFeedback: PropTypes.func.isRequired,
 };

@@ -24,7 +24,7 @@ export default function Statistics({
           Total:<span>{total}</span>
         </li>
         <li className={s.item}>
-          PositivePercentage: <span>{positivePercentage(total)}%</span>
+          Positive feedback: <span>{positivePercentage}%</span>
         </li>
       </ul>
     </div>

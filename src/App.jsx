@@ -44,7 +44,7 @@ class App extends Component {
       <div>
         <Section title="Please leave feedback">
           <FeedbackOptions
-            options={this.state}
+            options={Object.keys(this.state)}
             onLeaveFeedback={updateQuantityFeedbacks}
           />
         </Section>
@@ -56,7 +56,7 @@ class App extends Component {
               neutral={neutral}
               bad={bad}
               total={totalFeedback}
-              positivePercentage={countPositiveFeedbackPercentage}
+              positivePercentage={countPositiveFeedbackPercentage(totalFeedback)}
             />
           ) : (
             <NotificationMessage message="There is no feedback" />
